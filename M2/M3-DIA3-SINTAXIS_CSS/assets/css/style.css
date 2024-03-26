@@ -1,0 +1,33 @@
+/* SELECTOR POR ETIQUETA => se define poniendo el nombre de la etiqueta */
+h1 {
+  color: #8b008b;
+}
+
+h2 {
+  /* color predeterminado css */
+  /* color: darkmagenta; */
+
+  /* color código RGB */
+  /* color: rgb(139, 0, 139); */
+
+  /* color código hexadecimal */
+  color: #8b008b;
+  text-decoration: underline;
+}
+
+/* SELECTOR POR ID => se define con un # antes del id de la etiqueta */
+/*🚨ES ÚNICO , NO SE PUEDE REPETIR EN OTRA ETIQUETA🚨 */
+#pepe {
+  color: #daf540;
+  text-decoration: overline;
+}
+
+#ingrid {
+  color: #daf540;
+}
+
+/* SELECTOR POR CLASE => se define con un . previo al nombre de la clase */
+/* PUEDO DARLE A VARIAS ETIQUETAS LA MISMA CLASE Y COMPARTIR ESTILOS */
+.warning {
+  color: #da073b;
+}

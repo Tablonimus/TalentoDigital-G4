@@ -1,0 +1,22 @@
+/* LA ULTIMA REGLA MANDA */
+h2 {
+  color: red;
+  color: blue;
+}
+
+/* Lo específico manda por sobre lo
+general. */
+
+#titulo-secundario{
+    text-decoration: underline;
+}
+
+#titulo-principal {
+  color: red !important;
+}
+
+#titulo-principal {
+  color: green;
+}
+
+

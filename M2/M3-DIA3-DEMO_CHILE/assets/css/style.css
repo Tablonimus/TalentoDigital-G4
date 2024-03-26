@@ -1,0 +1,14 @@
+#wrapper {
+  background: darkgray;
+}
+
+.text-blue {
+  color: #0037a1;
+}
+
+.text-red {
+  color: #d02a1e;
+}
+.text-white {
+  color: white;
+}
