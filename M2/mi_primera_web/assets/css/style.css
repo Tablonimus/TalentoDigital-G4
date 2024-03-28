@@ -1,0 +1,22 @@
+header {
+  background-image: url("../images/bg-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Propiedades Agregadas */
+  font-family: Open sans;
+  text-align: right;
+  color: white;
+  /* propiedad que le da sombra al texto */
+  text-shadow: 0px 3px 6px black;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: lighter;/* 100 al 900 - lighter - normal - bold - bolder */
+}
