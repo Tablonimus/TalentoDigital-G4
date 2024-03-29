@@ -18,5 +18,33 @@ h1 {
 
 h3 {
   font-size: 40px;
-  font-weight: lighter;/* 100 al 900 - lighter - normal - bold - bolder */
+  font-weight: lighter; /* 100 al 900 - lighter - normal - bold - bolder */
 }
+
+/* PRÓXIMA CHARLA */
+#Proxima-Charla {
+  background: #a4452c;
+  padding: 100px;
+  color: white;
+}
+
+#Proxima-Charla .wrapper {
+  width: 800px;
+  margin: auto; /* el valor auto me pondrá margenes automaticamente */
+}
+
+.wrapper img {
+  width: 25%; /* El 25% de .wrapper  */
+}
+
+.wrapper .texto {
+  width: 70%;
+  margin-left: 4%;
+  display: inline-block;
+ }
+
+
+
+.wrapper img, .texto {
+  vertical-align: middle;
+ }
