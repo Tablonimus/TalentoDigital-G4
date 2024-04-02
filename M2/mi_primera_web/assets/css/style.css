@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 header {
   background-image: url("../images/bg-hero.png");
   background-position: center;
@@ -41,10 +47,27 @@ h3 {
   width: 70%;
   margin-left: 4%;
   display: inline-block;
- }
+}
 
-
-
-.wrapper img, .texto {
+.wrapper img,
+.texto {
   vertical-align: middle;
- }
+}
+/* EVENTOS ANTERIORES */
+#Eventos-Anteriores {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background: #000f08;
+  color: white;
+  padding: 20px;
+}
+
+i {
+  margin: 0 15px;
+  font-size: 50px;
+}
