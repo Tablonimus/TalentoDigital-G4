@@ -6,17 +6,21 @@ h2 {
 
 /* Lo específico manda por sobre lo
 general. */
+#titulo-principal {
+  color: red !important;
+}
+#titulo-principal {
+  color: green;
+}
+/* -------------------------- */
+
+
+
 
 #titulo-secundario{
     text-decoration: underline;
 }
 
-#titulo-principal {
-  color: red !important;
-}
 
-#titulo-principal {
-  color: green;
-}
 
 

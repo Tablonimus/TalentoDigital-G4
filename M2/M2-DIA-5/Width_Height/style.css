@@ -1,0 +1,29 @@
+/* Micro reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Etiqueta body */
+body {
+  background-color: gray;
+  /* Le digo al body su tamaño */
+  height: 100vh; /* vh Alto de pantalla */
+  width: 100vw; /* vw  ancho de pantalla */
+}
+
+.grande {
+  background-color: blue;
+  /* Ancho */
+  width: 50%;
+  /* Alto */
+  height: 50%;
+}
+
+.chico {
+  background-color: red;
+  /* Ancho */
+  width: 50%;
+  /* Alto */
+  height: 50%;
+}

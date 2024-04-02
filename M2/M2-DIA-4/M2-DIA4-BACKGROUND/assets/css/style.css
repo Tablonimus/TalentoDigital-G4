@@ -1,0 +1,17 @@
+body {
+  /* Color de letra */
+  color: rgb(0, 0, 0);
+  /* Color de fondo */
+  background-color: gray;
+
+  /* Imagen de fondo=> siempre lleva una URL() y el valor entre comillas!!!!! */
+  background-image: url("../images/ejemplo3.avif");
+  /* Repetir el fondo: Indica si la imagen, de no cubrir completamente el fondo, se
+repetirá o no y en qué posición. */
+  background-repeat: no-repeat;
+  /*Tamaño del fondo: Define el tamaño de la imágen que se utilizará como fondo en el
+elemento aplicado. Generalmente usaremos contain o cover  */
+  background-size: cover;
+  /* background-position: Indica la posición del elemento en relación al fondo */
+  background-position: center;
+}
