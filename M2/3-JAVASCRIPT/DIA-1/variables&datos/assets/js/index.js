@@ -95,11 +95,3 @@ let noSonIgualesEstricto3 = 555 !== "456"; // true
 let noSonIgualesEstricto4 = 555 !== "555"; // true
 let noSonIgualesEstricto5 = "555" !== 555; // true
 let noSonIgualesEstricto6 = "Lautaro" !== "lautaro"; //true
-
-
-
-
-
-
-
-
