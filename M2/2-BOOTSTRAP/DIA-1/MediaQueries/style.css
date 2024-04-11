@@ -1,0 +1,25 @@
+/* MOBILE FIRST */
+
+body {
+  background-color: red;
+}
+
+/* La media query */
+
+@media (min-width: 800px) {
+  body {
+    background-color: blue;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+}

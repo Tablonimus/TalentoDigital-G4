@@ -15,8 +15,9 @@ const oracionNueva2 =
 /* Declaración de una variable VS Asignación de un valor VS Reasignación de un valor de una variable */
 
 let cadenaDeTexto; /* 💀 Declaración de la variable=> su valor por el momento undefined */
-cadenaDeTexto =
-  "Esto es un string"; /* Asignación de valor de una variable, luego de su declaración */
+
+
+cadenaDeTexto =  "Esto es un string"; /* Asignación de valor de una variable, luego de su declaración */
 
 let numero = 5; /* ✅Declaración y asignación de valor a una variable */
 numero = 10; /* Reasignación de valor */
