@@ -14,3 +14,17 @@
 
 ### Cambiar nombre por si tenemos master y queremos cambiar a main
 `git config --global init.defaultBranch main`
+
+# Branching
+
+## Ver ramas disponibles
+ `git branch`
+
+## Crear una rama
+`git branch nombreDeLaRama`
+
+## Para cambiar entre ramas
+`git checkout nombreDeLaRama`
+
+
+
