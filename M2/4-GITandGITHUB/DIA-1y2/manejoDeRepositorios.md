@@ -18,13 +18,15 @@
 # Branching
 
 ## Ver ramas disponibles
- `git branch`
+`git branch`
 
 ## Crear una rama
 `git branch nombreDeLaRama`
 
 ## Para cambiar entre ramas
 `git checkout nombreDeLaRama`
+
+
 
 
 
