@@ -1,0 +1,1 @@
+mkdir -p assets/css assets/img assets/js assets/sass assets/sass/base assets/sass/abstract assets/sass/themes assets/sass/components assets/sass/pages assets/sass/layout assets/sass/vendors && touch index.html README.md assets/css/style.css assets/js/index.js assets/sass/main.scss
