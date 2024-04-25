@@ -1,0 +1,12 @@
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #00000033;
+}
+
+.brand-container__image {
+  width: 3rem;
+  height: 3rem;
+}

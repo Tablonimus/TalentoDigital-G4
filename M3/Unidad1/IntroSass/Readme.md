@@ -1,4 +1,4 @@
-# SINTAXIS DEL COMANDO
+# SINTAXIS DEL COMANDO PARA COMPILAR SASS
 
 1- `sass` => elijo la línea de comando de sass.
 2- `--watch`=> observar un archivo y estar pendiente a su cambio para volver a compilar el archivo .css que se genera.
