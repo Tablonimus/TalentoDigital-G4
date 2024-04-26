@@ -7,18 +7,23 @@
   font-family: "Poppins", sans-serif;
 }
 
-.header{
-    border-bottom: 1px solid #00000036;
+body{
+  padding: 0 15rem ;
 }
 
-.footer{
-    border-top: 1px solid #00000036;
+.header {
+  border-bottom: 1px solid #00000036;
 }
+.footer {
+  border-top: 1px solid #00000036;
+}
+
+/* BRAND CONTAINER */
 .brand-container {
-    display: flex;
-    align-items: center;
-    gap:1rem;
-    padding: 2rem
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
 }
 .brand-container__image {
   width: 40px;
@@ -26,23 +31,136 @@
   border-radius: 10px;
 }
 
+/* HOME SECTION */
+.home-section {
+  display: flex;
+  border-bottom: 1px solid #00000036;
+}
+.div-60 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+/* div 40 */
+.div-40 {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* BLOG CARDS CONTAINER - VERTICAL */
+.blog-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .card-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  width: 250px;
+  width: 300px;
+  margin: 1rem;
 }
 .card-container__image {
   background-color: gray;
   height: 200px;
   border-radius: 10px;
+  object-fit: cover;
 }
 .card-information-container {
   display: flex;
   flex-direction: column;
+ 
+}
+.author-information-container{
+  display: flex;
+  align-items: center;
+  gap:1rem
 }
 .author-information-container__image {
   width: 40px;
   height: 40px;
   border-radius: 100%;
+}
+/* BIG - BLOG CARDS CONTAINER */
+.card-container-big {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+.card-container__image-big {
+  background-color: gray;
+  height: 30rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+/* BLOG CARDS CONTAINER - HORIZONTAL */
+.card-container-horizontal {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+}
+.card-container__image-horizontal {
+  background-color: gray;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-information-container-horizontal {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: space-between;
+}
+
+/* TECNOLOGY CARDS CONTAINER */
+.technology-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.technology-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.technology-card__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.technology-card__text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* MODIFICADORES */
+.technology-card--light-blue {
+  background-color: #2a9ed5;
+}
+.technology-card--yellow {
+  background-color: #d5d22a;
+}
+.technology-card--red {
+  background-color: #d52a2a;
+}
+.technology-card--black {
+  background-color: #000000;
+}
+.technology-card--green {
+  background-color: #2ad563;
+}
+.technology-card--purple {
+  background-color: #6e2ad5;
 }
