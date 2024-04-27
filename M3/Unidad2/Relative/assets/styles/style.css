@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.flex-container {
+  background-color: white;
+  color: white;
+  padding: 1rem;
+  height: 800px;
+  display: flex;
+  flex-direction: column; /* Comportamiento en columna/column o fila/row? */
+  justify-content: center; /* Comporatamiento del contenido sobre el EJE PRINCIPAL => column = X | row = Y */
+  align-items: center; /* Comporatamiento del contenido sobre el EJE SECUNDARIO => column = Y | row = X */
+  gap: 1rem /* Separación ENTRE hijos */
+}
+
+.hijo1 {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+}
+.hijo2 {
+  position: relative;/* 🍕 Relative toma como parametro a donde está el elemento */
+  right:100px;/* top-right-bottom-left me mueven el contenedor de acuerdo a sus valores  */
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+}
+.hijo3 {
+  background-color: purple;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+}
