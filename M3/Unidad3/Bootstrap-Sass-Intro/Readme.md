@@ -27,6 +27,12 @@ Puedes compilar tu propio Sass y corroborar si se integró. No olvides linkear e
 Prueba Bootstrap en tu html:
 `<h1 class="bg-success">Hola Mundo!</h1>`
 
+## Paso 6 (Opcional)
+Editar los valores por defecto de bootstrap:
+-Ej1- ir a la carpeta `/node_modules/bootstrap/dist/css/bootstrap.css` y modificar su contenido.
+-Ej2- ir a la carpeta `/node_modules/bootstrap/dist/css/bootstrap.css` , copiar el contenido y pegarlo en un parcial dentro de mi carpeta `/sass/vendors`
+
+
 <!-- ----------------------------------------------------------------------------------------------- -->
 ### COMANDO PARA CREAR ESTRUCTURA SASS.
 
