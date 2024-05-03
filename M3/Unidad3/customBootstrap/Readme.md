@@ -41,3 +41,10 @@ PD:
 Recomendaciones previas: 
  - cambia todo lo que necesites antes de compilar con sass.
  - Si necesitas hacer un nuevo cambio en el código fuente de bootstrap, ¡NO OLIVDES VOLVER A COMPILAR! 
+
+En la lína 300 encontraras
+`$primary: $blue !default;`
+y lo puedo cambiar por cualquier color CSS válido. Opciones: 
+- $primary: black; !default;
+- $primary: rgb(0, 0, 0) !default;
+- $primary: #000000 !default;
