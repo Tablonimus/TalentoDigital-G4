@@ -17,23 +17,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:1rem
+  gap: 1rem;
 }
 
 .nav-section__child1 {
   width: 20%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .nav-section__child2 {
   width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .nav-section__child3 {
   width: 30%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
-

@@ -17,15 +17,16 @@ a {
 
 button {
   background-color: transparent;
-  border: 0.5px solid black;
+  border: none;
   border-radius: 10px;
-  font-size: 0.8rem;
-  padding: 10px;
+  font-size: 0.7rem;
+  padding: 5px;
 }
 
 ul {
   list-style: none;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   font-size: 0.8rem;
