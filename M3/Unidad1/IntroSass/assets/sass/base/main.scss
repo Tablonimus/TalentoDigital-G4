@@ -1,0 +1,14 @@
+@import "./abstracts/variables.scss";
+
+nav {
+  background-color: $primary;
+  color: $warning;
+}
+
+.main {
+  color: $success;
+
+  &__link {
+    background-color: black;
+  }
+}

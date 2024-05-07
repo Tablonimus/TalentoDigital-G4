@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: sticky;/* FIXED Y STICKY */
+  top:500px;/* right-top-left-bottom */
+  background-color: blue;
+  width: 100%;
+  height: 10rem;
+}

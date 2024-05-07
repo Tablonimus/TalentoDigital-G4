@@ -1,16 +1,1 @@
-$primary: blueviolet;
-$warning: white;
-$success: green;
-
-nav {
-  background-color: $primary;
-  color: $warning;
-}
-
-.main {
-  color: $success;
-
-  &__link {
-    background-color: black;
-  }
-}
+@import "./abstracts/variables"
