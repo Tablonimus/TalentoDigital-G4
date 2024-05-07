@@ -1,0 +1,32 @@
+@import "../abstract/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* scroll suave */
+}
+
+body {
+  background-color: $gray;
+}
+
+a {
+  color: black;
+}
+
+button {
+  background-color: transparent;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.8rem;
+}

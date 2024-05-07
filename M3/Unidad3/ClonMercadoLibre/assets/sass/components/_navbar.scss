@@ -1,0 +1,39 @@
+@import "../abstract/variables.scss";
+
+.nav {
+  background-color: $yellow;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  width: $layout-width;
+  padding: 0.6rem;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem
+}
+
+.nav-section__child1 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.nav-section__child2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.nav-section__child3 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+

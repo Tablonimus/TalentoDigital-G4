@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* scroll suave */
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+a {
+  color: black;
+}
+
+button {
+  background-color: transparent;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.brand-logo {
+  height: 30px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.promo-logo {
+  height: 30px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.t-gradient {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* COMPONENTS */
+.inspiration-section {
+  display: flex;
+  justify-content: center;
+}
+
+.inspiration-section-container {
+  background-color: #fefffe;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  box-shadow: -1px 8px 19px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 8px 19px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 8px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav {
+  background-color: #ffe701;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 0.6rem;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-section__child1 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-section__child2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-section__child3 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container__image-container {
+  display: flex;
+}
+
+.card-container__description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@import "../abstract/variables.scss";
+
+.inspiration-section {
+  display: flex;
+  justify-content: center;
+}
+
+.inspiration-section-container {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  width: $layout-width;
+  padding: 0.6rem;
+  border-radius: 10px;
+  box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.75);
+}
