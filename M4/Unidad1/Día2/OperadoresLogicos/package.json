@@ -1,0 +1,14 @@
+{
+  "name": "operadoreslogicos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BeachSoftware.js",
+  "scripts": {
+    "netflix": "node ./NetflixSoftware.js",
+    "licence": "node ./LicenceSoftware.js",
+    "beach": "node ./BeachSoftware.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
