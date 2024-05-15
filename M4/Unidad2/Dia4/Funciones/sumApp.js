@@ -16,7 +16,7 @@ function suma(numero1, numero2, mensaje) {
     mensajeFinal = "Chau!";
   }
 
- return alert(resultado + " " + mensajeFinal);
+  return alert(resultado + " " + mensajeFinal);
 }
 
 suma(eleccion1, eleccion2, mensaje);
