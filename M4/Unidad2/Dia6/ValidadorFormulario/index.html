@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <title>Validador Formulario</title>
+  </head>
+  <body>
+    <form name="form" id="registerForm">
+      <div>
+        <label for="">Nombre</label>
+        <input id="nameInput" type="text" class="textNombre" />
+        <br />
+        <span style="color: red" id="errorName" class="errorNombre"></span>
+      </div>
+      <div>
+        <label for="">Teléfono</label>
+        <input id="phoneInput" type="number" class="textTelefono" />
+        <br />
+        <span style="color: red" id="errorPhone" class="errorTelefono"></span>
+      </div>
+      <div>
+        <label for="">Email</label>
+        <input id="emailInput" type="text" class="textEmail" />
+        <br />
+        <span style="color: red" id="errorEmail" class="errorEmail"></span>
+      </div>
+      <button type="submit">Registrarse</button>
+      <p class="resultado"></p>
+    </form>
+  </body>
+</html>
