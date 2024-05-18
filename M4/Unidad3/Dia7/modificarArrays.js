@@ -6,7 +6,7 @@ console.log(instrumentos);
 
 instrumentos[1] = "Violonchelo";
 instrumentos[2] = "Maracas";
-instrumentos[instrumentos.length] = "Gong"; //Agrego un valor al final
+instrumentos[instrumentos.length] = "Gong"; //⛔Agrego un valor al final📛📛☠⛔
 
 console.log("---------------------------------------------");
 console.log(`Terminé con  ${instrumentos.length} instrumentos`);
