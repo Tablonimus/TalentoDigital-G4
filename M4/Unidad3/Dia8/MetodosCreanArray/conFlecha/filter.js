@@ -56,3 +56,22 @@ const muchosAniosDeExperiencia = experiencias.filter((experiencia) => {
 });
 
 console.log(muchosAniosDeExperiencia);
+
+/* COMO ME DOY CUENTA SI FILTER ENCONTRÓ ALGO? con .length , si es mayor o nó a 0 */
+
+
+let numeros = [1, 2, 3, 4, 5, 2, 6, 7, 8, 9, 2];
+const numeroElegido = 2
+
+const filtrado = numeros.filter((num) => {
+  return num === numeroElegido;
+});
+
+console.log(filtrado); // []  ? [...]
+console.log(filtrado.length); // 0  o >0
+
+if (filtrado.length > 0) {
+  console.log("Se encontraron coincidencias");
+} else {
+  console.log("No hay conincidencias");
+}
