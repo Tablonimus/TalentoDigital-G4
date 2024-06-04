@@ -70,7 +70,7 @@ console.log("----------------------");
 estudiante2.saludar();
 // estudiante2.estudiar();
 // estudiante2.obtenerPromedio();
-estudiante2.cerrarSence()
+estudiante2.cerrarSence();
 
 /* ---------------------------------------------------------------- */
 // const nuevoCurso = [];
@@ -83,6 +83,7 @@ estudiante2.cerrarSence()
 /* ---------------------------------------------------------------- */
 
 /* CLASE CONSTRUCTORA => TEMA DE UNIDAD 2 - MÓDULO 5 */
+
 // class Estudiante {
 //   constructor(nombre, apellido, calificaciones, asistencias, isApproved) {
 //     this.nombre = nombre;
