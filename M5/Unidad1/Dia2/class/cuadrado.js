@@ -5,7 +5,7 @@ function Cuadrado(lado) {
 /* Creo una nueva instancia de la clase cuadrado */
 let cuadradito = new Cuadrado(20);
 
-/* ------------------------------------------------------ */ 
+/* ------------------------------------------------------ */
 /*✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅ */
 /* LA CLASE ES EL MOLDE */
 /* LA INTANCIA ES LO QUE CREO A PARTIR DE ESE MOLDE */
@@ -13,6 +13,13 @@ let cuadradito = new Cuadrado(20);
 class CuadradoClase {
   constructor(lado) {
     this.lado = lado;
+  }
+  calcularArea() {
+    return lado * lado;
+  }
+
+  calcularPerimetro() {
+    return lado * 4;
   }
 }
 /* Creo una nueva instancia de la clase cuadrado */
