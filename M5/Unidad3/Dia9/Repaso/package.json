@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "repaso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "asyncAwait.js",
+  "scripts": {
+    "ejemploAsync": "node ./asyncAwait.js",
+    "ejemploPromise": "node ./asyncPromise.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
