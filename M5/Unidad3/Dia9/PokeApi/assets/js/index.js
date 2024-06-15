@@ -6,14 +6,26 @@
 2 Paciencia
 */
 const URL_BASE = "https://pokeapi.co/api/v2/pokemon/?limit=100";
-const cardsSection = document.getElementById("cards-container");
+const cardsContainer = document.getElementById("cards-container");
+const loader = document.getElementById("loader-section");
+const buttonApi = document.getElementById("api");
 
 const searchPokemons = async () => {
+  /* Featured by https://css-loaders.com/ */
+  loader.innerHTML = `
+  <div class="loader-modal">
+   <div class="loader"></div>
+  </div>
+  `;
+
+  cardsContainer.innerHTML = "";
+
   try {
     const response = await fetch(URL_BASE);
     const data = await response.json();
     const pokemonsArray = data.results; //=> [{.}, {.}, {.}]
     //                                                    ↑
+     if (!pokemonsArray.length) throw new Error("El array de pokemones está vacío")
 
     pokemonsArray.forEach(async (pokemon) => {
       const response = await fetch(pokemon.url);
@@ -30,7 +42,9 @@ const searchPokemons = async () => {
 
       const pokeCard = `
         <div class="card p-4" style="width: 18rem;">
-            <img src="${pokemonInfo.imagen}" class="card-img-top" alt="${pokemonInfo.nombre}" style="height: 18rem;">
+            <img src="${pokemonInfo.imagen}" class="card-img-top" alt="${
+        pokemonInfo.nombre
+      }" style="height: 18rem;">
             <div class="card-body">
                     <h3>${pokemonInfo.nombre.toUpperCase()}</h3>
                     <h3>${pokemonInfo.peso} Kg</h3>
@@ -38,15 +52,20 @@ const searchPokemons = async () => {
         </div>        
         `;
 
-      cardsSection.innerHTML += pokeCard;
+      cardsContainer.innerHTML += pokeCard;
     });
   } catch (error) {
     console.log(error);
     alert(error.message); //TIP => error es un objeto que siempre viene con la propiedad message
+  } finally {
+    setTimeout(() => {
+      loader.innerHTML = "";
+    }, 3000);
   }
 };
 
-searchPokemons();
+buttonApi.addEventListener("click", searchPokemons);
+// searchPokemons();
 
 /* OPCION CON .THEN()
 
