@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- -------PROPIOS------------- -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/set1.css" />
+    <script defer type="module" src="./assets/js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand">Navbar</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <header class="py-5">
+      <h1 class="text-start container fs-1 py-5 shadow-lg">Planeta Digimon</h1>
+    </header>
+    <main class="pt-4 d-flex-column justify-content-center">
+      <h2 class="text-center">Selecciona tu favorito</h2>
+      <!-- CARD SECTION -->
+      <section id="card-section" class="grid">
+        <!-- digimons -->
+      </section>
+    </main>
+    <footer class="d-flex justify-content-center">
+      <nav class="" aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a id="previous-page" class="page-link" href="#">Previous</a>
+          </li>
+          <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+          <li class="page-item">
+            <a id="next-page" class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              id="modal-title"
+              class="modal-title fs-5"
+              id="staticBackdropLabel"
+            >
+              <!-- aca inseratmos el título -->
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="modal-body" class="modal-body">
+            <!-- aca inseratmos el body -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
