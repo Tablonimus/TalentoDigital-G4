@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="botones">
+      <!-- Aca van los botones -->
+    </div>
+
+    <script>
+      const botonera = document.querySelector(".botones");
+      const textos = [
+        "Ingresar",
+        "Registrarme",
+        "Cancelar",
+        "Estudiar",
+        "Descansar",
+      ];
+
+      /* Componente=> Es esta función que devuelve un trozo de html   */
+      const crearBotonPersonalizado = (text) => {
+        const button = `<button> ${text} </button>`;
+        return button;
+      };
+
+      for (let text of textos) {
+        botonera.innerHTML += crearBotonPersonalizado(text);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+    <h1 id="titulo"></h1>
+
+    <script>
+      const input = document.querySelector("input");
+      input.addEventListener("keyup", (e) => {
+        const { value } = e.target;
+        document.querySelector("#titulo").innerHTML = value;
+
+        let backgroundColorProp =
+          document.querySelector("body").style.backgroundColor;
+
+        document.querySelector("body").style.backgroundColor =
+          backgroundColorProp === "white"
+            ? (backgroundColorProp = "red")
+            : (backgroundColorProp = "white");
+      });
+    </script>
+  </body>
+</html>

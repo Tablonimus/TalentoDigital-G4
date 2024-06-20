@@ -9,27 +9,32 @@
     Para utilizar async/await  debemos decirle al navegador que nuestro archivo JS es de tipo modulo
 */
 
-/* Paso 1 => utilizar await y fetch para consumir la API */
-const apiResponse = await fetch("https://dragonball-api.com/api/characters"); //🛑 con await espera a que la petición se cumpla
+try {
+  /* Paso 1 => utilizar await y fetch para consumir la API */
+  const apiResponse = await fetch("https://dragonball-api.com/api/characters"); //🛑 con await espera a que la petición se cumpla
 
-const data = await apiResponse.json(); ////🛑 con await espera a que se convierta a json
+  const data = await apiResponse.json(); ////🛑 con await espera a que se convierta a json
 
-const characters = data.items;
-console.log(characters);
+  const characters = data.items;
+  console.log(characters);
 
-/* Paso 2 => Mostrar el contenido en el html = MANIPULAR EL DOM = AGARRAR ETIQUETAS! */
-const cardSection = document.getElementById("card-section");
+  /* Paso 2 => Mostrar el contenido en el html = MANIPULAR EL DOM = AGARRAR ETIQUETAS! */
+  const cardSection = document.getElementById("card-section");
 
-characters.forEach((character) => {
-  let characterCard = `
-    <div class="card p-2" style="width: 18rem;">
-        <img src="${character.image}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${character.name}</h5>
-            <p class="card-text">Afiliacion: ${character.affiliation}</p>     
-        </div>
-    </div>
-`;
+  characters.forEach((character) => {
+    let characterCard = `
+      <div class="card p-2" style="width: 18rem;">
+          <img src="${character.image}" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">${character.name}</h5>
+              <p class="card-text">Afiliacion: ${character.affiliation}</p>     
+          </div>
+      </div>
+  `;
 
-  cardSection.innerHTML += characterCard;
-});
+    cardSection.innerHTML += characterCard;
+  });
+} catch (error) {
+  console.log(error);
+  alert("Houston tenemos un error.");
+}
