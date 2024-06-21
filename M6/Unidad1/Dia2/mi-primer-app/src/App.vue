@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <DescriptionComponent title="UN TITULO" />
+  <DescriptionComponent title="OTRO TITULO" />
+  <DescriptionComponent title="MAS TITULOS DEL TITULO" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import DescriptionComponent from "./components/DescriptionComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    DescriptionComponent,
+  },
+};
 </script>
 
 <style>
