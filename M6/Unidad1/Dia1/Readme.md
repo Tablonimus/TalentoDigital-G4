@@ -15,6 +15,13 @@ Corroborar instalación con
 Crear la carpeta del proyecto:
 
 `vue create mi-ejemplo`
+---
+
+### TIP:
+si quieres evitar las opciones de inicio de vue, puedes usar el flag --default
+
+`vue create --default mi-ejemplo`
+---
 
 PD: NO debes tener carpetas superiores con espacios ni caracteres raros, y tampoco puedes llamar a la carpeta del proyecto de esa manera.
 
@@ -28,6 +35,9 @@ Te saldrá que puedes ejecutar:
 `cd mi-ejemplo`
 `npm install`
 `npm run serve`
+
+
+
 
 ## Paso 2:
 

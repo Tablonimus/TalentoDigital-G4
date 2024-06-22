@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>{{title}}</h3>
+    <h3>Este es el titulo => {{ title }}</h3>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro fugit
       veritatis saepe asperiores quisquam pariatur ipsam dignissimos molestias

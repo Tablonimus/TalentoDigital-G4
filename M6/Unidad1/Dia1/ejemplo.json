@@ -1,0 +1,26 @@
+{
+  "name": "rol admmin",
+  "description": "Rol para administradores",
+  "properties": [
+    {
+      "name": "activities",
+      "category": "Gestion curricular FK",
+      "subcategory": "una categoria dentro FK",
+      "permissions": {
+        "edit": "true FK",
+        "read": "true FK",
+        "show": "true FK"
+      }
+    },
+    {
+      "name": "activities",
+      "category": "Gestion curricular FK",
+      "subcategory": "una categoria dentro FK",
+      "permissions": {
+        "edit": "true FK",
+        "read": "true FK",
+        "show": "true FK"
+      }
+    }
+  ]
+}
