@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       mainTitle: "Mi data.",
-      description: "Mi descricion es cortita.",
+      description: "Mi descripcion es cortita.",
       myName:"Lautaro"
     };
   },
