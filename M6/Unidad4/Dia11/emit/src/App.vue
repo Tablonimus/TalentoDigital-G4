@@ -26,6 +26,7 @@ export default {
   },
   data() {
     return {
+
       personas: [
         {
           foto: "https://avatars.githubusercontent.com/u/499550?v=4",
