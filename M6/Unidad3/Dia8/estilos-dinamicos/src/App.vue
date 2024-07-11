@@ -13,6 +13,21 @@
       alt="exampleImage"
       :style="{ width: anchoImagen }"
     />
+    <br />
+    <input
+      type="text"
+      :style="{
+        color: colorDeTexto,
+        backgroundColor: colorDeFondo,
+        border: bordeInput,
+      }"
+    />
+
+    <br />
+
+    <h3 :class="{ textoGrande: isBig, textoSubrayado: isUnderlined }">
+      Esto es un h3
+    </h3>
   </div>
 </template>
 
@@ -23,15 +38,21 @@ export default {
     return {
       colorDeTexto: "#fff",
       colorDeFondo: "#031020",
-      anchoImagen: "100%",
+      anchoImagen: "10%",
+      bordeInput: "dotted",
+      isUnderlined: true,
+      isBig: true,
     };
   },
 };
 </script>
 
 <style>
-/* p {
-  color: white;
-  background-color: red;
-} */
+.textoGrande {
+  font-size: 35px;
+}
+
+.textoSubrayado {
+  text-decoration: underline;
+}
 </style>
