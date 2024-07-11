@@ -7,8 +7,8 @@
         class="loader"
       />
     </div>
-    <div v-for="(usuario, index) in usuarios" :key="index">
-      <img :src="usuario.picture.large" />
+    <div v-for="(foto, index) in arrayFotos" :key="index">
+      <img :src="foto" />
     </div>
   </div>
 </template>
@@ -23,11 +23,17 @@ export default {
       usuarios: [], //.length => 0   ..... 30
     };
   },
-  methods: {},
+  computed: {
+    arrayFotos() {
+      let arrayDeFotos = this.usuarios.map((user) => user.picture.large);
+      return arrayDeFotos;
+    },
+  },
   async mounted() {
     try {
       const url = "https://randomuser.me/api?results=30";
       const { data } = await axios.get(url);
+
       this.usuarios = data.results;
     } catch (error) {
       console.log(error);
