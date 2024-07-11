@@ -20,7 +20,7 @@ export default {
   name: "App",
   data() {
     return {
-      usuarios: [], //.length => 0   ..... 30
+      usuarios: [], 
     };
   },
   computed: {
