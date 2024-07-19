@@ -1,4 +1,6 @@
 <template>
+  <h1>{{ nombreRuta }} | {{ mensaje }}</h1>
+
   <div>
     <section>
       <div id="pokedex">
@@ -115,6 +117,7 @@ export default {
       isLoading: false,
     };
   },
+  props: ["mensaje", "nombreRuta"],
 
   methods: {
     async getPokemonDetail(id) {

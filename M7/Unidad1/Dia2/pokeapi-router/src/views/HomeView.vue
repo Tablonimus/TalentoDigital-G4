@@ -9,10 +9,8 @@
         v-for="(pokemon, index) in pokemons"
       >
         <router-link :to="`/pokemon/${pokemon.id}`">
-
           <h3>{{ pokemon.name }} - ID {{ pokemon.id }}</h3>
           <img :src="pokemon.image" alt="" class="pokemon-image" />
-          
         </router-link>
       </div>
     </section>
@@ -20,7 +18,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import axios from "axios";
 export default {
   name: "HomeView",

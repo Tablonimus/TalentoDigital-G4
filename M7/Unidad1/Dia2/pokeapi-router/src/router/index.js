@@ -17,6 +17,12 @@ const routes = [
     path: "/pokemon/:id",
     name: "pokemon",
     component: () => import("../views/PokemonDetail.vue"),
+    props: () => {
+      return {
+        nombreRuta: "Ruta de pokemons",
+        mensaje: "tenemos un mensaje",
+      };
+    },
   },
 ];
 
