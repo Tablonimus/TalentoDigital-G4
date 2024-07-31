@@ -7,7 +7,7 @@
     />
     <!--  -->
     <main class="h-100">
-      <h1>Hola {{ loggedUser }}</h1>
+      <h1>Hola {{ loggedUser.name }}</h1>
     </main>
     <!--  -->
     <FooterComponent

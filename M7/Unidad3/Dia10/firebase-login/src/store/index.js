@@ -22,7 +22,6 @@ export default createStore({
         );
 
         context.commit("setLoggedUser", loginResponse);
-        
         router.push("/home");
 
       } catch (error) {
