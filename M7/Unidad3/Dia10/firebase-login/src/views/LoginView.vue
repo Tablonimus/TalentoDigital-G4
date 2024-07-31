@@ -1,6 +1,6 @@
 <template>
   <div class="loginClass">
-    <h2>Login</h2>
+    <h2>Login V2</h2>
     <label for="">Email</label>
     <input v-model="email" type="email" placeholder="Ingrese su correo..." />
     <br />
