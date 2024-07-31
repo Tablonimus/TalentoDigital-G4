@@ -1,25 +1,55 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import RegisterView from '../views/RegisterView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import RegisterView from "../views/RegisterView.vue";
+import HomeView from "@/views/HomeView.vue";
+import LoginView from "@/views/LoginView.vue";
+import store from "@/store";
 
 const routes = [
   {
-    path: '/',
-    name: 'register',
-    component: RegisterView
+    path: "/",
+    name: "login",
+    component: LoginView,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+    path: "/register",
+    name: "register",
+    component: RegisterView,
+  },
+  {
+    path: "/home",
+    name: "home",
+    component: HomeView,
+    meta: {
+      login: true,
+    },
+  },
+  {
+    path: "/about",
+    name: "about",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    meta: {
+      login: true,
+    },
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+/* Protección de rutas => GUARDIAN */
+router.beforeEach((to, from, next) => {
+  if (to.matched.some((route) => route.meta.login)) {
+    if (!store.state.loggedUser) {
+      next("/"); //Te redirigo a la ruta raiz si no hay usuario logueado
+    } else {
+      next(); //Si en el estado global hay un usuario logueado, te envío a la ruta deseada
+    }
+  } else {
+    next(); // si la ruta a la que voy, no tiene meta login, voy a esa ruta sin problemas
+  }
+});
+
+export default router;
