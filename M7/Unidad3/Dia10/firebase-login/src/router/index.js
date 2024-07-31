@@ -20,7 +20,7 @@ const routes = [
     name: "home",
     component: HomeView,
     meta: {
-      login: true,
+      isAuthRequired: true,
     },
   },
   {
@@ -29,7 +29,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
     meta: {
-      login: true,
+      isAuthRequired: true,
     },
   },
 ];
@@ -41,7 +41,7 @@ const router = createRouter({
 
 /* Protección de rutas => GUARDIAN */
 router.beforeEach((to, from, next) => {
-  if (to.matched.some((route) => route.meta.login)) {
+  if (to.matched.some((route) => route.meta.isAuthRequired)) {
     if (!store.state.loggedUser) {
       next("/"); //Te redirigo a la ruta raiz si no hay usuario logueado
     } else {
