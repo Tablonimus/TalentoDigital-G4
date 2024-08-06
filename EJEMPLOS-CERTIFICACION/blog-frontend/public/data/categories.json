@@ -1,0 +1,26 @@
+[
+  {
+    "name": "html",
+    "imageURL": "https://e7.pngegg.com/pngimages/780/934/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail.png"
+  },
+  {
+    "name": "javascript",
+    "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-DW_HRN0h9p0HU7tkiKE4PiuryqmVH6X9w&s"
+  },
+  {
+    "name": "css",
+    "imageURL": "https://e7.pngegg.com/pngimages/603/759/png-clipart-css3-cascading-style-sheets-logo-html-world-wide-web-blue-angle-thumbnail.png"
+  },
+  {
+    "name": "react",
+    "imageURL": "https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png"
+  },
+  {
+    "name": "vue",
+    "imageURL": "https://w7.pngwing.com/pngs/854/555/png-transparent-vue-js-hd-logo-thumbnail.png"
+  },
+  {
+    "name": "bootstrap",
+    "imageURL": "https://e7.pngegg.com/pngimages/439/345/png-clipart-bootstrap-logo-thumbnail-tech-companies.png"
+  }
+]
