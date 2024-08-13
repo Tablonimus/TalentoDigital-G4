@@ -18,14 +18,14 @@ export default createStore({
         const response = await axios.get("/data/users.json"); //=> get a nuestro propio puerto
         /* Si te llega un arary de usuarios */
         const users = response.data;
-        const loggedUser = users.find(
+        const userData = users.find(
           (user) =>
             user.user_name === userDataInput.user &&
             user.password === userDataInput.password
         );
 
-        if (loggedUser) {
-          context.commit("setLoggedUser", loggedUser);
+        if (userData) {
+          context.commit("setLoggedUser", userData);
           router.push("/home");
         } else {
           alert("Credenciales incorrectas");
