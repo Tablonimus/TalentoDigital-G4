@@ -90,7 +90,6 @@ export default createStore({
       }
     },
 
-
     async deletePokemonByName(context, pokemonToDeleteName) {
       try {
         /* Hago una copia del array original */
@@ -140,6 +139,6 @@ export default createStore({
         alert("ERROR: Pokemon no editado.");
       }
     },
-    
+
   },
 });
