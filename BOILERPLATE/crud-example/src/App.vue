@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Inicio</router-link> |
-    <router-link to="/crear">Crear Pokemon</router-link>
+    <router-link to="/admin">Administrar Pokemones</router-link>
   </nav>
   <router-view />
 </template>
